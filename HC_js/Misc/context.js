@@ -14,3 +14,4 @@ if(myName === window.myName){
 
 ReferenceError: window is not defined
 at Object.<anonymous> */
+
