@@ -1,7 +1,7 @@
-var userInput = 'rock'
+var userInput = 'bomb'
 const getUserChoice = userInput => {
 userInput = userInput.toLowerCase();
-if(userInput === 'rock' || userInput === 'scissors' || userInput==='paper'){
+if(userInput === 'rock' || userInput === 'scissors' || userInput==='paper' || userInput === 'bomb'){
   return userInput;
 }else{
   console.log("enter valid input")
@@ -23,7 +23,7 @@ const getComputerChoice = () => {
 
 const determineWinner = (userChoice , computerChoice) => {
   if(userChoice == computerChoice){
-    return 'tie , go fuck yourself bitch!'
+    return 'tie , Try again!'
   }
   else{
     if(userChoice == 'rock'){
@@ -47,20 +47,23 @@ const determineWinner = (userChoice , computerChoice) => {
             return 'User Won!'
         }
     }
+    if(userChoice == 'bomb'){
+      return 'User WON!'
+    }
   }
   }   // method close
 
-//;
-
 function playGame(){
-  userChoice = getUserChoice('rock');
+  userChoice = getUserChoice('bomb');
   computerChoice = getComputerChoice();
 
-  console.log(userChoice)
-  console.log(computerChoice)
+  console.log('USER :     ' + userChoice)
+  console.log('COMPUTER : '+ computerChoice)
+  console.log();
  console.log(determineWinner(userChoice , computerChoice))
 }
 
+// -----------driver-------------
 
 playGame()
 
