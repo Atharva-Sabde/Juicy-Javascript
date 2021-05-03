@@ -56,7 +56,7 @@ const determineWinner = (userChoice , computerChoice) => {
 function playGame(){
   userChoice = getUserChoice('bomb');
   computerChoice = getComputerChoice();
-
+  
   console.log('USER :     ' + userChoice)
   console.log('COMPUTER : '+ computerChoice)
   console.log();
