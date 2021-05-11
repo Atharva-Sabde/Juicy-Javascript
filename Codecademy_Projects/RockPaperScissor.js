@@ -7,6 +7,7 @@ if(userInput === 'rock' || userInput === 'scissors' || userInput==='paper' || us
   console.log("enter valid input")
 }
 };
+-
 
 // console.log(getUserChoice(''));
 const getComputerChoice = () => {
@@ -31,7 +32,7 @@ const determineWinner = (userChoice , computerChoice) => {
         return 'Computer Won!'
       }else{
         return 'User Won!'
-      } 
+      }    
     }
     if(userChoice == 'paper'){
         if(computerChoice == 'scissors'){
