@@ -1,22 +1,31 @@
-function help(){
-    console.log('about to start')
-    setTimeout( function calldude(){ 
-        console.log('ddddd')}
-         , 3000)
-}
 
-// help()
+// function x(){
+//     var i= 1;
+//     setTimeout(
+//         function(){
+//             while(i!=10){
+//                 console.log(`Waiting for ${i} seconds...`)
+//                 i++;
+//             }
+//         }
+//         , i*1000
+//         )
+        
+//         console.log("hello im first")
+        
+//     }
+    // x();
 
-function x(){
-    var i= 1;
-    setTimeout(
-        function(){
-            while(i!=10){
-                console.log(`Waiting for ${i} seconds...`)
-                i++;
-            }
-        }
-        , 2000
-    )
+
+function y(){
+    for(let j=1 ; j<=5 ; j++){
+        setTimeout(
+            function(){
+                console.log(`Waiting for ${j} seconds...`)
+            } , j*1000 
+        )
+    }
+    console.log("hello im first")
 }
-x();
+    
+y();
