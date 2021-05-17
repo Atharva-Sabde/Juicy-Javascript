@@ -16,3 +16,20 @@ for(let i = 0 ; i<input.length; i++){
 }
 // resultArray.toUpperCase()
 console.log(resultArray.join('').toUpperCase())
+
+
+function myFunc() {
+    var i = 5;
+    if(--i) {
+        myFunc();
+        log(i)
+    }
+}
+myFunc()
+
+// What will be the output
+
+// A. Error
+// B. 4, 3, 2, 1, ...
+// C. 4, 4, 4, 4, ...
+// D. 0, 0, 0, 0
